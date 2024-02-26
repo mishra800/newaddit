@@ -1,0 +1,59 @@
+/* CSS for image slicing effect */
+.sliced-image {
+  position: relative;
+  overflow: hidden;
+}
+.sliced-image img {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.sliced-image:hover img {
+  transform: scale(1.1);
+}
+/* CSS for text and button styling */
+.cm-richtext-animated__container {
+  /* Your text styling here */
+}
+.btn button {
+  /* Your button styling here */
+}
+.btn {
+  display: inline-block;
+  margin: 20px;
+}
+
+.btn button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn button:hover {
+  background-color: #45a049;
+}
+
+/* Advanced CSS */
+.btn button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s;
+}
+
+.btn button:hover:before {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  top: -50%;
+  left: -50%;
+}

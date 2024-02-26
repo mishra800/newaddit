@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADDIT SOLUTIONS PRIVATE LIMITED</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/mainpage/style.css">
+  <style>
+    /* Custom CSS */
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .navbar-toggler {
+      border-color: #333;
+    }
+    .navbar-nav .nav-link {
+      color: #333;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #555;
+    }
+    .dropdown-menu {
+      border: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      animation: fadeInDown 0.5s ease forwards;
+    }
+    .dropdown-menu .dropdown-item {
+      color: #333;
+      animation: fadeInLeft 0.5s ease forwards;
+    }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #f8f9fa;
+    }
+    /* Responsive Heading */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+    }
+    
+    /* Custom Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <span class="navbar-brand" style="color: #171818;  border-bottom: 2px solid #55badf; ">ADDIT SOLUTIONS PRIVATE LIMITED</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Second dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Resource  Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="/project Management/pro.html">Project Management</a>
+            <a class="dropdown-item" href="/dataScience/datascience.html">Data Science</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/operation/oper.html">Operations</a>
+          </div>
+        </li>
+        <!-- End -->
+        <!-- Other Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Other Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="#">Agile Transformation</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <!-- End -->
+        <!-- About -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="/who we are/who.html">Who We Are</a>
+            <a class="dropdown-item" href="/leadership/leader.html">Leadership</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/contactpage/contact.html">Contact</a>
+          </div>
+        </li>
+        <!-- End -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-----FEEDBACK FORM -->
+
+<script src="https://form.jotform.com/static/feedback2.js"></script>
+<script>
+  new JotformFeedback({
+    
+type: false,
+width: 700,
+height: 500,
+fontColor: "#FFFFFF",
+background: "#F59202",
+isCardForm: false,
+formId: "240561508593459"
+,
+    buttonText: "Feedback",
+    buttonSide: "left",
+    buttonAlign: "center",
+    base: "https://form.jotform.com/",
+  });
+</script>
+<script type="text/javascript">
+  var ifr = document.getElementById("lightbox-240561508593459");
+  if (ifr) {
+    var src = ifr.src;
+    var iframeParams = [];
+    if (window.location.href && window.location.href.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+    }
+    if (src && src.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+      src = src.substr(0, src.indexOf("?"))
+    }
+    iframeParams.push("isIframeEmbed=1");
+    ifr.src = src + "?" + iframeParams.join('&');
+  }
+  window.handleIFrameMessage = function(e) {
+    if (typeof e.data === 'object') { return; }
+    var args = e.data.split(":");
+    if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+    if (!iframe) { return; }
+    switch (args[0]) {
+      case "scrollIntoView":
+        iframe.scrollIntoView();
+        break;
+      case "setHeight":
+        iframe.style.height = args[1] + "px";
+        if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+          iframe.style.minHeight = args[1] + "px";
+        }
+        break;
+      case "collapseErrorPage":
+        if (iframe.clientHeight > window.innerHeight) {
+          iframe.style.height = window.innerHeight + "px";
+        }
+        break;
+      case "reloadPage":
+        window.location.reload();
+        break;
+      case "loadScript":
+        if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+        var src = args[1];
+        if (args.length > 3) {
+            src = args[1] + ':' + args[2];
+        }
+        var script = document.createElement('script');
+        script.src = src;
+        script.type = 'text/javascript';
+        document.body.appendChild(script);
+        break;
+      case "exitFullscreen":
+        if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+        else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+        else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+        else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+        else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+        break;
+    }
+    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+    if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+      var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+      iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+    }
+  };
+  window.isPermitted = function(originUrl, whitelisted_domains) {
+    var url = document.createElement('a');
+    url.href = originUrl;
+    var hostname = url.hostname;
+    var result = false;
+    if( typeof hostname !== 'undefined' ) {
+      whitelisted_domains.forEach(function(element) {
+          if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+              result = true;
+          }
+      });
+      return result;
+    }
+  };
+  if (window.addEventListener) {
+    window.addEventListener("message", handleIFrameMessage, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onmessage", handleIFrameMessage);
+  }
+  </script>
+<!----END OF THE FEEDBACK FORM -->
+<!------second section -->
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide">
+      <img src="/2664.jpg" alt="Image 1">
+      <div class="text-overlay">"Empower your business with our exceptional team of experts, setting the benchmark for excellence in project management, data science, and digital technologies."</div>
+      <a href="/contactpage/contact.html" class="button-overlay">Let's Connect</a>
+    </div>
+    <div class="slide">
+      <img src="/565.jpg" alt="Image 2">
+      <div class="text-overlay">"Experience the power of collaboration as our experts seamlessly integrate into your operations, driving sustainable growth and competitive advantage."</div>
+      <a href="/contactpage/contact.html" class="button-overlay">Let's Connect</a>
+    </div>
+    <div class="slide">
+      <img src="/1.webp" alt="Image 3">
+      <div class="text-overlay">"Our dedicated team of professionals brings a wealth of experience and innovation to every project, ensuring unparalleled results."</div>
+      <a href="/contactpage/contact.html" class="button-overlay">Let's Connect</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const slider = document.querySelector('.slider');
+
+  let currentIndex = 0;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+  }
+
+  function updateSlider() {
+    const offset = -currentIndex * slides[0].clientWidth;
+    slider.style.transform = `translateX(${offset}px)`;
+
+    // Remove zoom effect from previous slide
+    slides.forEach(slide => slide.querySelector('img').classList.remove('zoom'));
+    // Apply zoom effect to current slide
+    slides[currentIndex].querySelector('img').classList.add('zoom');
+  }
+
+  // Automatically switch to next slide every 3 seconds
+  setInterval(nextSlide, 3000);
+</script>
+
+
+<!-----end of the second section -->
+
+<!-----3 section -->
+
+
+
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="aditi-message">
+        <i class="icon fas fa-info-circle"></i>
+        <p>"ADDIT Solutions Private Limited provides the best resources to corporates for their business success. We have ready-to-join experts in Project Management - Project Manager, Project Coordinator, Scrum Master, Delivery Manager, IT Project Manager, and Program Manager. We also provide the best resource services for Data Science, various Digital Technologies, and Mobile Technologies."</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Add animation class after the page loads
+  window.onload = function() {
+    document.querySelector('.aditi-message').classList.add('show');
+  };
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+
+
+<!-----end of the third sectiion -->
+
+
+
+<!-----4 page -->
+<div class="row-fluid-wrapper row-depth-1 row-number-8 dnd-section">
+  <div class="row-fluid ">
+      <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+          data-w="12">
+
+          <div class="row-fluid-wrapper row-depth-1 row-number-9 dnd-row">
+              <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                      data-widget-type="custom_widget" data-x="0" data-w="12">
+                      <div id="hs_cos_wrapper_widget_1702380024396"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+                          <div id="clients-trust" class="widget_1702380024396 three-col-icon-content"
+                              style="background: #f0f6fe;">
+                              <div class="content-wrapper">
+                                  <div class="headline-content-wrap"
+                                      style="max-width: 600px; margin: 0 auto;">
+                                      <h2>Address Present Challenges and Anticipate Tomorrow's Hurdles</h2>
+                                  </div>
+
+                                  <div class="cards-icon-wrap">
+
+
+                                      <a class="cards-icon-inner" href="">
+                                          <div class="icontop-wrap">
+                                              <img src="project-management.png" alt="PROJECT MANAGEMENT"
+                                                  loading="lazy" style="width: 100px; height: 100px;">
+                                          </div>
+                                          <h3>PROJECT Management</h3>
+                                          <p>Revolutionize project management with cutting-edge tools and
+                                              methodologies, driving efficiency gains and delivering
+                                              exceptional project outcomes.</p>
+                                      </a>
+
+
+
+
+                                      <a class="cards-icon-inner" href="">
+                                          <div class="icontop-wrap">
+                                              <img src="agile.jpg" alt="agile transformation"
+                                                  loading="lazy" style="width: 100px; height: 100px;">
+                                          </div>
+                                          <h3>AGILE TRANSFORMATION</h3>
+                                          <p>"Unlocking Agility: Transform Your Operations with Agile
+                                              Methodologies for Enhanced Flexibility, Speed, and Success."</p>
+                                      </a>
+
+
+
+                                      <a class="cards-icon-inner" href="">
+                                          <div class="icontop-wrap">
+                                              <img src="data science.png" alt="data science"
+                                                  loading="lazy" style="width: 100px; height: 100px;">
+                                          </div>
+                                          <h3>DATA SCIENCE</h3>
+                                          <p>"Unleash the Power of Data Science: Harnessing Insights to Drive
+                                              Informed Decision-Making and Achieve Business Excellence."</p>
+                                      </a>
+
+
+
+
+
+
+                                      <a class="cards-icon-inner" href="">
+                                          <div class="icontop-wrap">
+                                              <img src="operations.webp" alt="operations" loading="lazy"
+                                                  style="width: 100px; height: 100px;">
+                                          </div>
+                                          <h3>OPERATIONS</h3>
+                                          <p>Master Your Destiny: Step into the Role of Operations Guru,
+                                              Steering the Ship of Success with Precision and Purpose.</p>
+                                      </a>
+
+
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                  <!--end widget-span -->
+              </div>
+              <!--end row-->
+          </div>
+          <!--end row-wrapper -->
+
+      </div>
+      <!--end widget-span -->
+  </div>
+  <!--end row-->
+</div>
+<!--end row-wrapper -->
+<!-----start the advances-->
+
+
+
+<!----end of the 4 page -->
+
+<!-----page 5 -->
+
+
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 dnd-section">
+  <div class="row-fluid">
+      <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell"
+          data-x="0" data-w="12">
+          <div class="row-fluid-wrapper row-depth-1 row-number-11 dnd-row">
+              <div class="row-fluid">
+                  <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                      data-widget-type="custom_widget" data-x="0" data-w="12">
+                      <div id="aditi-advantage" class="widget_1702380318821 two-col-img-content"
+                          style="background: #99dcec;">
+                          <div class="content-wrapper">
+                              <div class="left-col-image__container">
+                                  <div class="left-col-image__element auto-zoom">
+                                      <span style="color: blue;" >BEST RESOURCES</span>
+                                  </div>
+                                  
+                                  <div class="left-col-image__element auto-zoom">
+                                      <span style="color: blue;">GOOD SERVICES</span>
+                                  </div>
+                                  <div class="left-col-image__element auto-zoom">
+                                      <span style="color: #14bae4;" > Speed</span>
+                                  </div>
+                                  <div class="left-col-image__element auto-zoom">
+                                      <span style="color: #14bae4;">Quality of candidates</span>
+                                  </div>
+                                  <div class="left-col-image__element auto-zoom">
+                                      <span style="color: #05a8d0;" >Cost effectiveness</span>
+                                  </div>
+                                  
+                              </div>
+
+                              <div class="headline-banner-content-wrap"
+                                  style="max-width: 352px; margin: 0 auto;">
+                                  <p style="margin-bottom: 15px;"><img src="ARROW.png" loading="lazy"
+                                          alt="arrow-right-icon" style="width: 45px; height: 32px;"></p>
+                                  <h2>THE ADDIT ADVANTAGE</h2>
+                                  <p></p>
+                                  <p><a href="/project Management/pro.html" class="btn-white" rel="noopener">OUR BEST SERVICES</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!------end of the page -->
+<!-----page 6 section -->
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+
+
+<section class="contact" id="contact">
+<div class="heading">
+    <h2>Contact Us</h2>
+</div>
+<div class="box">
+    <div class="content">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+            <img src="phone.png" alt="Phone Icon">
+            <a href="tel:+20106050">Call: +91 83098 13723</a>
+        </div>
+        <p>Monday-Saturday (8am-8pm)</p>
+    </div>
+    <div class="content">
+        <i class="fas fa-envelope"></i>
+        <div>
+            <img src="outlook.jpg" alt="Outlook Logo">
+            <a href="mailto:ankit@additsol.com">ankit@additsol.com</a>
+        </div>
+    </div>
+    <div class="content">
+        <i class="fas fa-globe"></i>
+        <div>
+            <img src="link.jpg" alt="LinkedIn Logo">
+            <a href="https://www.linkedin.com/in/your_profile" target="_blank">LinkedIn Profile</a>
+        </div>
+    </div>
+    <div class="content">
+        <i class="fas fa-location-dot"></i>
+        <div>
+            <p>Location: H.Tech City, Hyderabad</p>
+            <p>Telangana</p>
+            <a href="https://maps.app.goo.gl/6wkfGBhV1QW5Giv46" target="_blank">View on Map</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!----end the page section-->
+
+<!----page 7 footer -->
+
+ <!------footer page -->
+
+   
+ <style>
+  /* Global Styles */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #fff;
+  }
+
+  /* Footer Styles */
+  .footer {
+      background-color: #464040;
+      color: #fff;
+      padding: 40px 0;
+      font-size: 16px;
+      text-align: center;
+      border-top: 4px solid #1FB3D9;
+  }
+
+  .footer__container {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .footer__logo {
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+  .footer__logo h1 {
+      font-size: 32px;
+      color: #02b5e1;
+      text-decoration: none;
+      margin: 0;
+      transition: transform 0.8s ease;
+  }
+
+  .footer__logo h1:hover {
+      transform: scale(1.05);
+  }
+
+  .footer__navigation {
+      margin-top: 20px;
+      animation: fadeInLeft 1s ease forwards;
+  }
+
+  .footer__navigation ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .footer__navigation ul li {
+      display: inline-block;
+      margin-right: 20px;
+  }
+
+  .footer__navigation ul li:last-child {
+      margin-right: 0;
+  }
+
+  .footer__navigation ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+
+  .footer__navigation ul li a:hover {
+      color: #1FB3D9;
+  }
+
+  .footer__social-icons {
+      margin-top: 20px;
+      animation: fadeInRight 1s ease forwards;
+  }
+
+  .footer__social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+  }
+
+  .footer__social-icons a:hover {
+      transform: scale(1.2);
+  }
+
+  .footer__address {
+      margin-top: 20px;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+  .footer__address p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffffff;
+  }
+
+  .footer__copyright {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fffdfd;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .footer__logo h1 {
+          font-size: 24px;
+      }
+  }
+
+  /* Keyframe animations */
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  @keyframes fadeInLeft {
+      from {
+          opacity: 0;
+          transform: translateX(-20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  @keyframes fadeInRight {
+      from {
+          opacity: 0;
+          transform: translateX(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+</style>
+
+
+
+<footer class="footer">
+  <div class="footer__container">
+      <div class="footer__logo">
+          <h1>ADDIT SOLUTIONS PRIVATE LIMITED</h1>
+      </div>
+      <div class="footer__navigation">
+          <ul>
+              <li><a href="/addit solution/index.html">Home</a></li>
+              <li><a href="/addit solution/index.html">RESOURCES SERVICES</a></li>
+              <li><a href="/addit solution/index.html">OTHER SERVICES</a></li>
+              <li><a href="/addit solution/index.html">ABOUT</a></li>
+          </ul>
+      </div>
+      <div class="footer__social-icons">
+          <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" /></a>
+          <!-- <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/twitter.png"/></a>
+  <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+  <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a> -->
+      </div>
+      <div class="footer__address">
+          <h4> Ground floor, MC Design House, Rohini Layout Rd, behind Domino's, Jaihind Enclave, HITEC City, Hyderabad, Telangana 500081.</h4>
+      </div>
+      <div class="footer__copyright">
+          <p style="color: #05a8d0;" >&copy; 2024 Addit Solutions Private Limited. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+<!------end the page -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="/who we are/who.js"></script>
+</body>
+</html>

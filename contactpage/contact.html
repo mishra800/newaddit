@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADDIT SOLUTIONS PRIVATE LIMITED</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="contact.css">
+  <style>
+    /* Custom CSS */
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .navbar-toggler {
+      border-color: #333;
+    }
+    .navbar-nav .nav-link {
+      color: #333;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #555;
+    }
+    .dropdown-menu {
+      border: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      animation: fadeInDown 0.5s ease forwards;
+    }
+    .dropdown-menu .dropdown-item {
+      color: #333;
+      animation: fadeInLeft 0.5s ease forwards;
+    }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #f8f9fa;
+    }
+    /* Responsive Heading */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+    }
+    
+    /* Custom Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <span class="navbar-brand" style="color: #171818;  border-bottom: 2px solid #55badf; ">ADDIT SOLUTIONS PRIVATE LIMITED</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Second dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Resource  Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="/project Management/pro.html">Project Management</a>
+            <a class="dropdown-item" href="/dataScience/datascience.html">Data Science</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/operation/oper.html">Operations</a>
+          </div>
+        </li>
+        <!-- End -->
+        <!-- Other Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Other Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="#">Agile Transformation</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <!-- End -->
+        <!-- About -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="/who we are/who.html">Who We Are</a>
+            <a class="dropdown-item" href="/leadership/leader.html">Leadership</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/contactpage/contact.html">Contact</a>
+          </div>
+        </li>
+        <!-- End -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-----FEEDBACK FORM -->
+
+<script src="https://form.jotform.com/static/feedback2.js"></script>
+<script>
+  new JotformFeedback({
+    
+type: false,
+width: 700,
+height: 500,
+fontColor: "#FFFFFF",
+background: "#F59202",
+isCardForm: false,
+formId: "240561508593459"
+,
+    buttonText: "Feedback",
+    buttonSide: "left",
+    buttonAlign: "center",
+    base: "https://form.jotform.com/",
+  });
+</script>
+<script type="text/javascript">
+  var ifr = document.getElementById("lightbox-240561508593459");
+  if (ifr) {
+    var src = ifr.src;
+    var iframeParams = [];
+    if (window.location.href && window.location.href.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+    }
+    if (src && src.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+      src = src.substr(0, src.indexOf("?"))
+    }
+    iframeParams.push("isIframeEmbed=1");
+    ifr.src = src + "?" + iframeParams.join('&');
+  }
+  window.handleIFrameMessage = function(e) {
+    if (typeof e.data === 'object') { return; }
+    var args = e.data.split(":");
+    if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+    if (!iframe) { return; }
+    switch (args[0]) {
+      case "scrollIntoView":
+        iframe.scrollIntoView();
+        break;
+      case "setHeight":
+        iframe.style.height = args[1] + "px";
+        if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+          iframe.style.minHeight = args[1] + "px";
+        }
+        break;
+      case "collapseErrorPage":
+        if (iframe.clientHeight > window.innerHeight) {
+          iframe.style.height = window.innerHeight + "px";
+        }
+        break;
+      case "reloadPage":
+        window.location.reload();
+        break;
+      case "loadScript":
+        if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+        var src = args[1];
+        if (args.length > 3) {
+            src = args[1] + ':' + args[2];
+        }
+        var script = document.createElement('script');
+        script.src = src;
+        script.type = 'text/javascript';
+        document.body.appendChild(script);
+        break;
+      case "exitFullscreen":
+        if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+        else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+        else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+        else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+        else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+        break;
+    }
+    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+    if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+      var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+      iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+    }
+  };
+  window.isPermitted = function(originUrl, whitelisted_domains) {
+    var url = document.createElement('a');
+    url.href = originUrl;
+    var hostname = url.hostname;
+    var result = false;
+    if( typeof hostname !== 'undefined' ) {
+      whitelisted_domains.forEach(function(element) {
+          if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+              result = true;
+          }
+      });
+      return result;
+    }
+  };
+  if (window.addEventListener) {
+    window.addEventListener("message", handleIFrameMessage, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onmessage", handleIFrameMessage);
+  }
+  </script>
+<!----END OF THE FEEDBACK FORM -->
+
+<!----add page 1
+-->
+<div class="container-fluid body-container body-container--home">
+  <div class="row-fluid-wrapper">
+      <div class="row-fluid">
+          <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0"
+              data-w="12">
+
+              <div
+                  class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-margin dnd_area-row-0-force-full-width-section dnd-section dnd_area-row-0-padding">
+                  <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-cell cell_16161565324522-padding dnd-column"
+                          style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                          <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                              <div class="row-fluid ">
+                                  <div class="span12 widget-span widget-type-custom_widget dnd-module"
+                                      style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                                      <div id="hs_cos_wrapper_widget_1616156531881"
+                                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
+                                          style="" data-hs-cos-general-type="widget"
+                                          data-hs-cos-type="module">
+
+                                          <div class="cm-hero-animated"
+                                              style="--module-content-max-width: 1164px;">
+                                              <div class="cm-hero-animated__container">
+                                                  <div class="cm-hero-animated__content">
+                                                      <div class="cm-hero-animated__content-text">
+                                                          <h1><span
+                                                                  style="text-transform: uppercase;">LET'S
+                                                                  CONNECT</span></h1>
+                                                          <p class="body_text_large"><span
+                                                                  style="color: #000000;">We're here to
+                                                                  assist.</span></p>
+                                                      </div>
+                                                      <div class="cm-hero-animated__content-buttons">
+
+                                                      </div>
+
+                                                  </div>
+                                              </div>
+                                            
+                                          </div>
+                                      </div>
+
+                                  </div>
+                                  <!--end widget-span -->
+                              </div>
+                              <!--end row-->
+                          </div>
+                          <!--end row-wrapper -->
+
+                      </div>
+                      <!--end widget-span -->
+                  </div>
+                  <!--end row-->
+              </div>
+
+ <!-----contact page -->
+ <div
+ class="row-fluid-wrapper row-depth-1 row-number-3 dnd_area-row-1-padding dnd_area-row-1-vertical-alignment dnd-section dnd_area-row-1-background-layers">
+ <div class="row-fluid ">
+     <div class="span7 widget-span widget-type-cell cell_16165299395682-padding cell_16165299395682-margin cell_16165299395682-vertical-alignment dnd-column cell_16165299395682-background-layers"
+         style="" data-widget-type="cell" data-x="0" data-w="7">
+
+         <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
+             <div class="row-fluid ">
+                 <div class="span12 widget-span widget-type-custom_widget widget_1616529939223-padding dnd-module"
+                     style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                     <div id="hs_cos_wrapper_widget_1616529939223"
+                         class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-form"
+                         style="" data-hs-cos-general-type="widget"
+                         data-hs-cos-type="module">
+                         <div class="container">
+                             <h2 style="color: #000000;">Contact Us</h2>
+                             <form id="contact-form"
+                                 action="https://sheetdb.io/api/v1/xm3vnju6zggc4"
+                                 method="post" id="sheetdb form">
+                                 <label for="name" style="color: #000000;" >Name:</label>
+                                 <input type="text" id="name" name="name" required>
+
+                                 <label for="email" style="color: #000000;" >Email:</label>
+                                 <input type="email" id="email" name="email" required>
+
+                                 <label for="phone" style="color: #000000;" >Phone Number:</label>
+                                 <input type="tel" id="phone" name="phone" required>
+
+                                 <label for="company" style="color: #000000;" >Company Name:</label>
+                                 <input type="text" id="company" name="company" required>
+
+                                 <label for="message" style="color: #000000;" >Message:</label>
+                                 <textarea id="message" name="message"
+                                     required></textarea>
+
+                                 <button type="submit">Send</button>
+                             </form>
+                         </div>
+                         <script>
+                             var form = document.getElementById('contact-form'); // Corrected form ID
+                             form.addEventListener("submit", e => {
+                                 e.preventDefault();
+                                 fetch(form.action, {
+                                     method: "POST",
+                                     body: new FormData(document.getElementById("contact-form")),
+                                 }).then(
+                                     response => response.json()
+                                 ).then((html) => {
+                                     // Redirect to the home page
+                                     window.location.href = 'index.html'; // Change 'index.html' to the path of your home page
+                                 });
+                             });
+                         </script>
+
+                         <span id="hs_cos_wrapper_widget_1616529939223_"
+                             class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form"
+                             style="" data-hs-cos-general-type="widget"
+                             data-hs-cos-type="form">
+                             <div id="hs_form_target_widget_1616529939223"></div>
+
+
+
+
+
+
+
+
+                         </span>
+                     </div>
+
+                 </div>
+                 <!--end widget-span -->
+             </div>
+             <!--end row-->
+         </div>
+         <!--end row-wrapper -->
+
+     </div>
+     <!--end widget-span -->
+     <div class="span5 widget-span widget-type-cell cell_1616531063732-padding cell_1616531063732-vertical-alignment dnd-column"
+         style="" data-widget-type="cell" data-x="7" data-w="5">
+
+         <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-row">
+             <div class="row-fluid ">
+                 <div class="span12 widget-span widget-type-custom_widget dnd-module"
+                     style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                     <div id="hs_cos_wrapper_widget_1616531063398"
+                         class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                         style="" data-hs-cos-general-type="widget"
+                         data-hs-cos-type="module"><span
+                             id="hs_cos_wrapper_widget_1616531063398_"
+                             class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
+                             style="" data-hs-cos-general-type="widget"
+                             data-hs-cos-type="rich_text">
+                             <div
+                                 style="background: #1FB3D9; padding: 100px 20px 100px 20px;">
+                                 <div
+                                     style="line-height: 1.6; padding-left: 50px; padding-bottom: 24px; position: relative;">
+                                     <img src="https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=32&amp;name=phone.png"
+                                         alt="phone" width="32" loading="lazy"
+                                         style="width: 32px; float: left; position: absolute; left: 0; top: 0;"
+                                         srcset="https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=16&amp;name=phone.png 16w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=32&amp;name=phone.png 32w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=48&amp;name=phone.png 48w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=64&amp;name=phone.png 64w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=80&amp;name=phone.png 80w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/phone.png?width=96&amp;name=phone.png 96w"
+                                         sizes="(max-width: 32px) 100vw, 32px"><span
+                                         style="font-size: 20px; font-weight: bold;"><a
+                                             href="tel:14253055091" rel="noopener"
+                                             style="color: #ffffff;">+1-(425)-305-5091</a></span>
+                                 </div>
+                                 <div
+                                     style="line-height: 1.6; padding-left: 50px; padding-bottom: 24px; position: relative;">
+                                     <img src="https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=32&amp;name=mail.png"
+                                         alt="mail" width="32" loading="lazy"
+                                         style="width: 32px; float: left; position: absolute; left: 0; top: 0;"
+                                         srcset="https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=16&amp;name=mail.png 16w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=32&amp;name=mail.png 32w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=48&amp;name=mail.png 48w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=64&amp;name=mail.png 64w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=80&amp;name=mail.png 80w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/mail.png?width=96&amp;name=mail.png 96w"
+                                         sizes="(max-width: 32px) 100vw, 32px"><a
+                                         href="mailto:info@aditiconsulting.com"
+                                         style="color: #ffffff; font-weight: bold;"><span
+                                             style="font-size: 20px;">mishra216abhishek@gmail.com</span></a>
+                                 </div>
+                                 <div
+                                     style="line-height: 1.6; padding-left: 50px; padding-bottom: 24px; position: relative;">
+                                     <img src="https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=32&amp;name=location.png"
+                                         alt="location" width="32" loading="lazy"
+                                         style="width: 32px; float: left; position: absolute; left: 0; top: 0;"
+                                         srcset="https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=16&amp;name=location.png 16w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=32&amp;name=location.png 32w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=48&amp;name=location.png 48w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=64&amp;name=location.png 64w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=80&amp;name=location.png 80w, https://8725880.fs1.hubspotusercontent-na1.net/hub/8725880/hubfs/location.png?width=96&amp;name=location.png 96w"
+                                         sizes="(max-width: 32px) 100vw, 32px"><strong><span
+                                             style="color: #ffffff; font-size: 20px;">
+                                             Ground floor, MC Design House, Rohini Layout
+                                             Rd, behind Domino's, Jaihind Enclave, HITEC
+                                             City, Hyderabad, Telangana
+                                             500081.India</span></strong></div>
+                                 <div
+                                     style="line-height: 1.6; padding-left: 50px; padding-bottom: 24px; position: relative;">
+                                     <span
+                                         style="color: #ffffff; font-size: 20px;"></span>
+                                 </div>
+
+
+
+                             </div>
+                         </span>
+                     </div>
+
+                 </div>
+                 <!--end widget-span -->
+             </div>
+             <!--end row-->
+         </div>
+         <!--end row-wrapper -->
+
+     </div>
+     <!--end widget-span -->
+ </div>
+ <!--end row-->
+</div>
+<!--end row-wrapper -->
+<!------footer page -->
+
+   
+<style>
+  /* Global Styles */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #fff;
+  }
+
+  /* Footer Styles */
+  .footer {
+      background-color: #464040;
+      color: #fff;
+      padding: 40px 0;
+      font-size: 16px;
+      text-align: center;
+      border-top: 4px solid #1FB3D9;
+  }
+
+  .footer__container {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .footer__logo {
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+  .footer__logo h1 {
+      font-size: 32px;
+      color: #02b5e1;
+      text-decoration: none;
+      margin: 0;
+      transition: transform 0.8s ease;
+  }
+
+  .footer__logo h1:hover {
+      transform: scale(1.05);
+  }
+
+  .footer__navigation {
+      margin-top: 20px;
+      animation: fadeInLeft 1s ease forwards;
+  }
+
+  .footer__navigation ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .footer__navigation ul li {
+      display: inline-block;
+      margin-right: 20px;
+  }
+
+  .footer__navigation ul li:last-child {
+      margin-right: 0;
+  }
+
+  .footer__navigation ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+
+  .footer__navigation ul li a:hover {
+      color: #1FB3D9;
+  }
+
+  .footer__social-icons {
+      margin-top: 20px;
+      animation: fadeInRight 1s ease forwards;
+  }
+
+  .footer__social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+  }
+
+  .footer__social-icons a:hover {
+      transform: scale(1.2);
+  }
+
+  .footer__address {
+      margin-top: 20px;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+  .footer__address p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffffff;
+  }
+
+  .footer__copyright {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fffdfd;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .footer__logo h1 {
+          font-size: 24px;
+      }
+  }
+
+  /* Keyframe animations */
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  @keyframes fadeInLeft {
+      from {
+          opacity: 0;
+          transform: translateX(-20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  @keyframes fadeInRight {
+      from {
+          opacity: 0;
+          transform: translateX(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+</style>
+
+
+
+<footer class="footer">
+  <div class="footer__container">
+      <div class="footer__logo">
+          <h1>ADDIT SOLUTIONS PRIVATE LIMITED</h1>
+      </div>
+      <div class="footer__navigation">
+          <ul>
+              <li><a href="/addit solution/index.html">Home</a></li>
+              <li><a href="/addit solution/index.html">RESOURCES SERVICES</a></li>
+              <li><a href="/addit solution/index.html">OTHER SERVICES</a></li>
+              <li><a href="/addit solution/index.html">ABOUT</a></li>
+          </ul>
+      </div>
+      <div class="footer__social-icons">
+          <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" /></a>
+          <!-- <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/twitter.png"/></a>
+  <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+  <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a> -->
+      </div>
+      <div class="footer__address">
+          <h4> Ground floor, MC Design House, Rohini Layout Rd, behind Domino's, Jaihind Enclave, HITEC City, Hyderabad, Telangana 500081.</h4>
+      </div>
+      <div class="footer__copyright">
+          <p style="color: #05a8d0;" >&copy; 2024 Addit Solutions Private Limited. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+<!------end the page -->
+
+
+
+<!-- Your additional content goes here -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

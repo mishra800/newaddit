@@ -1,0 +1,411 @@
+
+/*second images sliding*/
+ /* Custom CSS */
+    /* Image Slider Section */
+    .slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px; /* Adjust max-width as needed */
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.8s ease;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .slide:hover img {
+      transform: scale(1.1);
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      opacity: 0.8;
+    }
+
+    .button-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 576px) {
+      .text-overlay {
+        font-size: 18px;
+      }
+    }
+
+    /*3 page os section */
+     /* Custom CSS */
+     .aditi-message {
+      max-width: 90%; /* Adjusted to 90% for better responsiveness */
+      margin: 20px auto; /* Added margin for better spacing */
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transition: opacity 0.5s ease; /* Added transition for opacity */
+    }
+    .aditi-message.show {
+      opacity: 1;
+    }
+    .aditi-message p {
+      margin-bottom: 10px; /* Adjusted margin for better spacing */
+    }
+    .aditi-message .icon {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 20px; /* Increased margin for better spacing */
+    }
+    @media (max-width: 768px) {
+      .aditi-message {
+        padding: 15px; /* Adjusted padding for smaller screens */
+      }
+      .aditi-message .icon {
+        font-size: 30px; /* Decreased icon size for smaller screens */
+      }
+    }
+
+
+    /* 4 pages*/
+
+    #clients-trust {
+      background: #f0f6fe;
+      padding: 50px 0;
+    }
+    
+    .headline-content-wrap h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .cards-icon-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .cards-icon-inner {
+      flex: 0 0 calc(33.333% - 20px);
+      margin: 15px;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .cards-icon-inner:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .cards-icon-inner img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    
+    .cards-icon-inner:hover img {
+      transform: scale(1.1);
+    }
+    
+    .cards-icon-inner h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .cards-icon-inner p {
+      font-size: 16px;
+    }
+    
+    @media (max-width: 768px) {
+      .cards-icon-inner {
+        flex-basis: calc(50% - 20px);
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .cards-icon-inner {
+        flex-basis: calc(100% - 20px);
+      }
+    }
+    
+
+    /*page 5 */
+    /* Circle Styling */
+    .left-col-image__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: auto;
+      
+      /* Additional features */
+      width: 100%; /* Ensures the container takes up the full width of its parent */
+      max-width: 1200px; /* Limits the maximum width of the container */
+      padding: 10px; /* Adds some padding around the content */
+      box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+      background-color: #71dcd5; /* Adds a background color */
+      border-radius: 8px; /* Rounds the corners of the container */
+      border: 5px solid #191818; /* Adds a border around the container */
+    }
+    
+
+.left-col-image__element {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.left-col-image__element:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.left-col-image__element img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-col-image__element .icon {
+  font-size: 3vw; /* Adjust font size for responsiveness */
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.left-col-image__element p {
+  font-size: 2vw; /* Adjust font size for responsiveness */
+  text-align: center;
+  margin: 0;
+}
+
+.addit-advantages {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .left-col-image__element {
+      width: 120px;
+      height: 120px;
+  }
+
+  .left-col-image__element .icon {
+      font-size: 4vw; /* Adjust font size for responsiveness */
+  }
+
+  .left-col-image__element p {
+      font-size: 3vw; /* Adjust font size for responsiveness */
+
+  }
+  
+}
+
+
+
+
+
+/* Auto-zoom Animation */
+@keyframes zoom {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.1);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.auto-zoom {
+  animation: zoom 3s infinite alternate;
+}
+/* end the page 5*/
+
+
+
+
+
+/*page 6 */
+
+ /* Contact Section Styles */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideInDown 1s ease forwards;
+}
+
+.heading h2 {
+  color: #333;
+  font-size: 32px;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 30px;
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease forwards;
+}
+
+.content i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content img {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.row {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    flex-basis: calc(33.333% - 30px);
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    flex-basis: calc(50% - 30px);
+    margin-bottom: 20px;
+  }
+}
+
+/* Animation Styles */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.button-overlay {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-overlay:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-overlay.pulse {
+  animation: buttonPulse 1s infinite;
+}

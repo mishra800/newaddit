@@ -1,0 +1,160 @@
+/* Additional CSS styles for image hover effect */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center;
+}
+
+.image-container img {
+  width: calc(50% - 10px); /* Adjust spacing between images for different screen sizes */
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+  border-radius: 10px; /* Increase border radius for smoother corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding smooth transitions on hover */
+}
+
+@media (max-width: 768px) {
+  .image-container img {
+    width: calc(100% - 10px); /* Full width for images on smaller screens */
+  }
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Further enhance box shadow on hover */
+}
+
+.cm-hero-animated__content-text {
+  text-align: center; /* Center the text */
+}
+
+.cm-hero-animated__content-text h1 {
+  font-size: 2.5rem; /* Increase font size of the heading */
+}
+
+.cm-hero-animated__content-text p {
+  font-size: 1.2rem; /* Increase font size of the paragraph */
+}
+
+
+/* Responsive CSS for centering text */
+@media (max-width: 768px) {
+  .cm-hero-animated__content-text {
+    text-align: center; /* Center the text on smaller screens */
+  }
+}
+
+/* Additional CSS for centering text */
+.cm-hero-animated__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.cm-hero-animated__content-text {
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Additional CSS for responsive styling */
+@media (max-width: 768px) {
+  .cm-hero-animated {
+    margin-bottom: 20px; /* Add spacing between text and image on small screens */
+  }
+}
+
+
+
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .cm-hero-animated {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .image-container {
+    margin-top: 20px; /* Add spacing between text and image on small screens */
+  }
+}
+
+/* Hero Section Styles */
+.cm-hero-animated {
+  padding: 40px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Background color */
+}
+
+.cm-hero-animated__content-text {
+  text-align: center; /* Center text */
+}
+
+.cm-hero-animated__content-buttons {
+  text-align: center; /* Center buttons or other content */
+}
+
+/* Image Container Styles */
+.image-container {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images are block elements */
+  margin-bottom: 20px; /* Add spacing between images */
+}
+
+/* Richtext Section Styles */
+.cm-richtext-animated {
+  padding: 40px; /* Adjust padding as needed */
+  background-color: rgba(244, 245, 247, 1.0); /* Background color */
+  text-align: center; /* Center text */
+}
+
+.cm-richtext-animated__container {
+  max-width: 450px; /* Limit text width */
+  margin: 0 auto; /* Center container */
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .row-depth-1 {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+  .widget-type-cell {
+    width: 100%; /* Make cells full width on smaller screens */
+  }
+}
+
+/* Hero Section Styles */
+.widget-type-rich_text {
+  padding: 20px; /* Adjust padding as needed */
+  background-color: rgba(244, 245, 247, 1.0); /* Background color */
+  text-align: center; /* Center text */
+}
+
+/* Image Styles */
+.widget-type-rich_text img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images are block elements */
+  margin: 0 auto; /* Center images */
+}
+
+/* Image Styles */
+.widget-type-rich_text img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images are block elements */
+  margin: 0 auto; /* Center images */
+  border-radius: 50%; /* Make images circular */
+}
+
+
+.message-text {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflow text */
+  text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+  text-align: justify; /* Set text alignment to justify */
+}

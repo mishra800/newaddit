@@ -1,0 +1,182 @@
+  /* Custom CSS */
+  .body-container {
+    padding-top: 50px; /* Adjust top padding as needed */
+    padding-bottom: 50px; /* Adjust bottom padding as needed */
+  }
+
+  .cm-hero-animated {
+    padding: 50px; /* Adjust padding as needed */
+    text-align: center;
+  }
+
+  .cm-hero-animated h1 {
+    font-size: 3rem; /* Adjust heading font size */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+
+  .body_text_large {
+    font-size: 1.5rem; /* Adjust text font size */
+    color: #000000;
+  }
+
+  /* Responsive CSS */
+  @media (max-width: 768px) {
+    .body-container {
+      padding-top: 30px; /* Adjust top padding for smaller screens */
+      padding-bottom: 30px; /* Adjust bottom padding for smaller screens */
+    }
+
+    .cm-hero-animated {
+      padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .cm-hero-animated h1 {
+      font-size: 2rem; /* Adjust heading font size for smaller screens */
+    }
+
+    .body_text_large {
+      font-size: 1.2rem; /* Adjust text font size for smaller screens */
+    }
+  }
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #02b5e1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #018aae;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+  
+  /* Custom CSS for contact information */
+.contact-info {
+  background: #1FB3D9;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.contact-info img {
+  width: 32px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact-info div {
+  line-height: 1.6;
+  padding-left: 50px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.contact-info a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to each line of contact information */
+.contact-info div:nth-child(odd) {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.contact-info div:nth-child(even) {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 20px;
+  }
+
+  .contact-info img {
+    width: 24px;
+  }
+
+  .contact-info div {
+    padding-left: 30px;
+    padding-bottom: 12px;
+  }
+
+  .contact-info a {
+    font-size: 16px;
+  }
+}
